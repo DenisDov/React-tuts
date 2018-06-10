@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import './App.css';
 
 import Header from './components/Header';
@@ -9,18 +9,18 @@ class App extends Component {
       <div className="App">
         <Header>
           {({ on, toggle }) => (
-            <div style={{ padding: 20 }}>
+            <Fragment>
               <button onClick={toggle}>Click</button>
               {on && <h2>Wassup!</h2>}
-            </div>
+            </Fragment>
           )}
         </Header>
         <Header>
           {({ on, toggle }) => (
-            <div style={{ padding: 20 }}>
+            <Fragment>
               <button onClick={toggle}>Click</button>
               {on && <h2>Wassup!</h2>}
-            </div>
+            </Fragment>
           )}
         </Header>
       </div>

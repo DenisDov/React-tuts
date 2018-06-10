@@ -1,7 +1,7 @@
-import React from 'react';
+import { Component } from 'react';
 import './../App.css';
 
-class Header extends React.Component {
+class Header extends Component {
   state = {
     on: false,
   };
